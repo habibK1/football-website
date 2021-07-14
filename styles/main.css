@@ -1,0 +1,130 @@
+/*------utilities-------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.button{
+    text-decoration: none;
+    font-weight: 660;
+        Padding:10px, 24px, 10px, 24px;
+        border-radius: 5px;
+        background: #E02C6D;
+        color: ivory;
+        padding: 5px 25px;
+
+}
+/*--------
+     head
+--------*/
+header{
+    background-color: #2D25A0;
+
+    margin-bottom: 100px;
+    width:100%;
+height: 500px;
+}
+.head{
+    display: flex;
+    height: 440px;
+    flex-basis: 100%;
+
+}
+.item {
+    flex-basis: 100%;
+  }
+
+.header-pic img{
+    width: 556.01px;
+    height: 438px;
+    left: 1299.01px;
+    top: 153px;
+    transition:transform 10s ease-in-out;
+}
+.header-text {
+    margin: 25px;
+    padding: 20px 30px;
+    justify-content: center;
+    color: rgb(236, 233, 228);
+}
+.header-text p{
+    padding-left: 3opx;
+}
+.header-pic img:hover{
+    transform: scale(1.4) rotate(360deg);
+}
+/*-------------
+main section
+-------*/
+main{
+    box-sizing: border-box;
+    margin-right: 100px;
+    margin-left: 70px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 25px;
+    grid-column-gap:27px; 
+    margin-bottom: 100px;
+}
+.container .players{
+    padding: 10px;
+    box-shadow: 5px 5px 40px rgba(0, 0, 100, 0.15);
+    border-radius: 10px;
+
+}
+
+.players img{
+    width:300 px;
+    height:256px;
+}
+/*--------------
+BOTTOM SECTION
+-------------*/
+.bottom{
+    display: flex;
+    margin-bottom: 70px;
+}
+.bottom-pic img{
+    width: 98%;
+    margin-left: 30px;
+}
+.bottom-text{
+    padding: 10px;
+}
+/*------------------footer-------*/
+.footer-img img{
+    width: 30%;
+    margin-left: 390px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*--------------media queries-----------*/
+@media (max-width:668px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+.bottom{
+            display:flex;
+            flex-direction:column ;
+        }
+.head{
+                display: flex;
+                flex-direction: column;
+            
+            }
+            .header-pic img{display:none;
+        
+            }
+
+}
+    
+}
